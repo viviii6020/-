@@ -1,0 +1,256 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Code start*/
+*,*:brfore,*:after{
+	box-sizing: border-box;
+}
+
+body{
+    font-family: "PingFang TC", sans-serif; 
+}
+.wrap{
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 42px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 img{
+    height: 40px;
+}
+.tag{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header .tag a{
+    display: block;
+    color: #3F5D45;
+    font-size: 16px;
+    line-height: 73px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-decoration: none;
+}
+.tag .cart a{
+    display: block;
+    margin-left: 49px;
+    margin-right: 0;
+}
+.tag a:hover{
+    color:#122215;
+}
+.tag img{
+    padding-top: 28px;
+}
+.content{
+    display: flex;
+    padding-top: 60px;
+}
+.menu{
+    width: 300px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+.menu h1{
+    color: #EAF0ED;
+    background: #3F5D45;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-weight: bold;
+    
+}
+.menu li{
+    border: 1px solid #EAF0ED;
+}
+.menu a{
+    width: 300px;
+    display: block;
+    text-decoration: none;
+    color: #3F5D45;
+    font-weight: bold;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.menu a:hover{
+    background: #EAF0ED;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+.cake{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    justify-content: space-between;
+    
+}
+.cake1, .cake2, .cake3, 
+.cake4, .cake5, .cake6{
+    width: 300px;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+.cake p{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 6px;
+    color: #EAF0ED;
+    background: #3F5D45;
+    writing-mode: vertical-lr;
+    position: absolute;
+    left: 20px;
+}
+.like{
+    width: 20px;
+    position: absolute;
+    right: 22px;
+    top: 19px;
+}
+.photo{
+    width: 300px;
+}
+.option{
+    display: flex;
+    color: #3F5D45;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.name, .dollar, .addCart{
+    border: 1px solid #EAF0ED;
+    line-height: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.name{
+    width: 169px;
+    border-top: 0;
+    border-right: 0;
+    font-size: 20px;
+    line-height: 24px;
+}
+.dollar{
+    border-top: 0;
+    width: 128px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+}
+.addCart{
+    background: #EAF0ED;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: 0;
+}
+.addCart a{
+    width: 298px;
+    display: block;
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #3F5D45;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    text-decoration: none;
+}
+.addCart a:hover{
+    background: #3F5D45;
+    color: #EAF0ED;
+    margin-left: -1px;
+}
+.page{
+    margin-bottom: 60px;
+}
+.page, .Pages a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+.page li{
+    width: 58px;
+    align-items: center;
+    border: 1px solid #EAF0ED; 
+}
+.page .Pages a{
+    width: 8px;
+    height: 28px;
+    color: #3F5D45;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none; 
+    margin-bottom: 1px;
+    border-right: none;
+}
+.page .Pages a:hover{
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+.page img{
+    margin-bottom: 1px;
+    height: 24px;
+    width: 24px;
+    padding: 17px;
+}
+
+
